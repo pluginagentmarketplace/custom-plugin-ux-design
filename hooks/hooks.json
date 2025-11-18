@@ -1,357 +1,321 @@
 {
   "hooks": [
     {
-      "name": "on-learning-start",
-      "description": "Triggered when user starts a new learning path",
-      "triggers": ["command:learn"],
+      "name": "on-plugin-creation",
+      "description": "Triggered when user creates a new plugin",
+      "triggers": ["command:create-plugin"],
       "actions": [
         {
-          "type": "init-progress-tracker",
+          "type": "scaffold-plugin",
           "data": {
-            "initialize-metadata": true,
-            "set-baseline-assessment": true,
-            "create-learning-plan": true
+            "create-directories": true,
+            "generate-manifest": true,
+            "create-templates": true,
+            "initialize-git": false
           }
         },
         {
-          "type": "notification",
+          "type": "show-architecture-guidance",
           "data": {
-            "message": "Welcome! Your personalized learning journey has begun.",
-            "level": "info"
+            "invoke-plugin-architect": true,
+            "suggest-best-practices": true,
+            "provide-examples": true
           }
         }
       ]
     },
     {
-      "name": "on-topic-completion",
-      "description": "Triggered when user completes a learning topic",
-      "triggers": ["user-action:topic-completed"],
+      "name": "on-ux-design-start",
+      "description": "Triggered when user starts UX design process",
+      "triggers": ["command:design-ux"],
       "actions": [
         {
-          "type": "update-progress",
+          "type": "initiate-research",
           "data": {
-            "mark-as-complete": true,
-            "update-completion-timestamp": true,
-            "calculate-streak": true
+            "generate-research-plan": true,
+            "create-persona-templates": true,
+            "provide-research-questions": true
           }
         },
         {
-          "type": "suggest-next-topic",
+          "type": "invoke-ux-expert",
           "data": {
-            "based-on": "learning-path",
-            "difficulty-adjustment": true
-          }
-        },
-        {
-          "type": "achievement-check",
-          "data": {
-            "unlock-badges": true,
-            "notify-on-milestone": true
+            "provide-design-guidance": true,
+            "share-examples": true,
+            "offer-templates": true
           }
         }
       ]
     },
     {
-      "name": "on-assessment-completion",
-      "description": "Triggered when user completes an assessment",
-      "triggers": ["command:assess"],
+      "name": "on-market-analysis",
+      "description": "Triggered when user analyzes market",
+      "triggers": ["command:market-plugin"],
       "actions": [
         {
-          "type": "score-assessment",
+          "type": "create-market-framework",
           "data": {
-            "calculate-percentile": true,
-            "compare-to-peers": true,
-            "determine-proficiency-level": true
+            "generate-research-template": true,
+            "provide-analysis-tools": true,
+            "create-comparison-matrix": true
           }
         },
         {
-          "type": "provide-feedback",
+          "type": "invoke-market-analyst",
           "data": {
-            "generate-detailed-report": true,
-            "identify-weak-areas": true,
-            "recommend-resources": true
-          }
-        },
-        {
-          "type": "update-certification-status",
-          "data": {
-            "check-certification-eligibility": true,
-            "award-certificate-if-qualified": true
+            "provide-market-insights": true,
+            "suggest-strategies": true,
+            "benchmark-competitors": true
           }
         }
       ]
     },
     {
-      "name": "on-daily-check-in",
-      "description": "Triggered when user opens the plugin daily",
-      "triggers": ["plugin:opened", "time:once-per-day"],
+      "name": "on-plugin-validation",
+      "description": "Triggered when user validates plugin before publishing",
+      "triggers": ["command:publish-plugin", "action:validate"],
       "actions": [
         {
-          "type": "display-dashboard",
+          "type": "run-validation-checks",
           "data": {
-            "show-current-progress": true,
-            "highlight-next-steps": true,
-            "show-achievements": true
+            "validate-structure": true,
+            "check-manifest": true,
+            "scan-code-quality": true,
+            "verify-documentation": true,
+            "test-accessibility": true
           }
         },
         {
-          "type": "streak-management",
+          "type": "generate-validation-report",
           "data": {
-            "check-if-streak-continues": true,
-            "calculate-learning-streak": true,
-            "notify-on-streak-milestones": true
-          }
-        },
-        {
-          "type": "motivational-reminder",
-          "data": {
-            "personalized-message": true,
-            "based-on-progress": true
+            "create-report": true,
+            "highlight-issues": true,
+            "suggest-fixes": true,
+            "provide-quality-score": true
           }
         }
       ]
     },
     {
-      "name": "on-progress-query",
-      "description": "Triggered when user views progress with /progress command",
-      "triggers": ["command:progress"],
+      "name": "on-marketplace-submission",
+      "description": "Triggered when user submits plugin to marketplace",
+      "triggers": ["command:publish-plugin", "action:submit"],
       "actions": [
         {
-          "type": "calculate-metrics",
+          "type": "prepare-submission",
           "data": {
-            "completion-percentage": true,
-            "time-invested": true,
-            "learning-velocity": true,
-            "estimated-completion-date": true
+            "optimize-listing": true,
+            "create-marketing-assets": true,
+            "prepare-metadata": true,
+            "generate-seo-tags": true
           }
         },
         {
-          "type": "generate-insights",
+          "type": "track-submission",
           "data": {
-            "ai-analysis": true,
-            "trend-detection": true,
-            "recommendations": true
-          }
-        },
-        {
-          "type": "comparison-metrics",
-          "data": {
-            "pace-vs-recommended": true,
-            "performance-vs-peers": true
+            "record-submission-time": true,
+            "track-status": true,
+            "send-confirmations": true,
+            "monitor-review-process": true
           }
         }
       ]
     },
     {
-      "name": "on-skill-unlock",
-      "description": "Triggered when user masters a new skill",
-      "triggers": ["user-achievement:skill-mastered"],
+      "name": "on-launch-campaign",
+      "description": "Triggered when user launches distribution campaign",
+      "triggers": ["command:publish-plugin", "action:distribute"],
       "actions": [
         {
-          "type": "celebrate-achievement",
+          "type": "activate-distribution",
           "data": {
-            "show-badge": true,
-            "play-notification": true,
-            "add-to-portfolio": true
+            "schedule-announcements": true,
+            "prepare-content": true,
+            "activate-channels": true,
+            "start-monitoring": true
           }
         },
         {
-          "type": "update-skill-registry",
+          "type": "invoke-growth-strategist",
           "data": {
-            "mark-skill-as-mastered": true,
-            "add-to-verified-skills": true,
-            "make-shareable": true
-          }
-        },
-        {
-          "type": "recommend-related-skills",
-          "data": {
-            "suggest-next-skills": true,
-            "show-career-paths": true
+            "provide-growth-tactics": true,
+            "suggest-channels": true,
+            "optimize-messaging": true,
+            "track-results": true
           }
         }
       ]
     },
     {
-      "name": "on-project-submission",
-      "description": "Triggered when user submits a hands-on project",
-      "triggers": ["user-action:project-submitted"],
+      "name": "on-documentation-creation",
+      "description": "Triggered when user creates documentation",
+      "triggers": ["action:documentation-start"],
       "actions": [
         {
-          "type": "validate-project",
+          "type": "generate-doc-structure",
           "data": {
-            "check-completeness": true,
-            "verify-requirements": true,
-            "test-functionality": true
+            "create-outline": true,
+            "generate-templates": true,
+            "suggest-sections": true,
+            "provide-examples": true
           }
         },
         {
-          "type": "provide-code-review",
+          "type": "invoke-community-manager",
           "data": {
-            "analyze-code-quality": true,
-            "check-best-practices": true,
-            "generate-feedback": true
-          }
-        },
-        {
-          "type": "award-project-credit",
-          "data": {
-            "mark-as-complete": true,
-            "provide-score": true,
-            "unlock-next-topics": true
+            "provide-writing-guidance": true,
+            "suggest-best-practices": true,
+            "quality-check": true,
+            "optimize-searchability": true
           }
         }
       ]
     },
     {
-      "name": "on-learning-milestone",
-      "description": "Triggered when user reaches major learning milestones",
-      "triggers": ["user-achievement:stage-complete", "user-achievement:role-complete"],
+      "name": "on-quality-check",
+      "description": "Triggered when user initiates quality assurance",
+      "triggers": ["action:testing-start"],
       "actions": [
         {
-          "type": "issue-certificate",
+          "type": "create-testing-plan",
           "data": {
-            "generate-certificate": true,
-            "add-to-credentials": true,
-            "make-shareable": true
+            "define-test-strategy": true,
+            "create-test-cases": true,
+            "generate-checklists": true,
+            "suggest-tools": true
           }
         },
         {
-          "type": "celebrate",
+          "type": "invoke-qa-lead",
           "data": {
-            "special-notification": true,
-            "milestone-badge": true,
-            "add-to-achievements": true
-          }
-        },
-        {
-          "type": "suggest-next-path",
-          "data": {
-            "recommend-advanced-roles": true,
-            "suggest-complementary-paths": true,
-            "show-career-options": true
+            "provide-testing-guidance": true,
+            "suggest-coverage": true,
+            "identify-risks": true,
+            "track-quality-metrics": true
           }
         }
       ]
     },
     {
-      "name": "on-knowledge-gap-detected",
-      "description": "Triggered when assessment reveals knowledge gaps",
-      "triggers": ["assessment-result:low-score"],
+      "name": "on-team-feedback",
+      "description": "Triggered when team provides feedback",
+      "triggers": ["action:feedback-received"],
       "actions": [
         {
-          "type": "identify-gaps",
+          "type": "analyze-feedback",
           "data": {
-            "analyze-failed-questions": true,
-            "group-by-topic": true
+            "categorize-feedback": true,
+            "identify-themes": true,
+            "prioritize-issues": true,
+            "suggest-improvements": true
           }
         },
         {
-          "type": "create-remedial-plan",
+          "type": "create-action-plan",
           "data": {
-            "recommend-review-topics": true,
-            "suggest-alternative-resources": true,
-            "schedule-retake": true
-          }
-        },
-        {
-          "type": "notify-agent",
-          "data": {
-            "alert-specialist": true,
-            "request-additional-help": true
+            "generate-recommendations": true,
+            "assign-owners": true,
+            "track-progress": true,
+            "measure-impact": true
           }
         }
       ]
     },
     {
-      "name": "on-roadmap-browse",
-      "description": "Triggered when user views roadmaps with /roadmap command",
-      "triggers": ["command:roadmap"],
+      "name": "on-performance-optimization",
+      "description": "Triggered when user optimizes plugin performance",
+      "triggers": ["action:optimization-start"],
       "actions": [
         {
-          "type": "fetch-roadmaps",
+          "type": "run-performance-audit",
           "data": {
-            "load-developer-roadmap-catalog": true,
-            "cache-popular-roadmaps": true
+            "measure-metrics": true,
+            "identify-bottlenecks": true,
+            "suggest-optimizations": true,
+            "provide-benchmarks": true
           }
         },
         {
-          "type": "personalize-recommendations",
+          "type": "provide-optimization-guidance",
           "data": {
-            "suggest-based-on-interests": true,
-            "highlight-relevant-roles": true,
-            "show-prerequisites": true
+            "share-best-practices": true,
+            "suggest-tools": true,
+            "provide-examples": true,
+            "track-improvements": true
           }
         }
       ]
     },
     {
-      "name": "on-extended-inactivity",
-      "description": "Triggered when user hasn't engaged for 7+ days",
-      "triggers": ["time:inactivity-7-days"],
+      "name": "on-user-feedback",
+      "description": "Triggered when plugin receives user feedback",
+      "triggers": ["action:user-feedback-received"],
       "actions": [
         {
-          "type": "send-reminder",
+          "type": "analyze-user-feedback",
           "data": {
-            "personalized-message": true,
-            "highlight-progress": true,
-            "motivate-continuation": true
+            "extract-insights": true,
+            "identify-patterns": true,
+            "prioritize-requests": true,
+            "suggest-improvements": true
           }
         },
         {
-          "type": "pause-streak-warning",
+          "type": "guide-iteration",
           "data": {
-            "warn-about-streak-loss": true,
-            "encourage-daily-learning": true
+            "suggest-features": true,
+            "recommend-fixes": true,
+            "plan-roadmap": true,
+            "communicate-with-users": true
           }
         }
       ]
     },
     {
-      "name": "on-learning-consistency",
-      "description": "Triggered on daily learning consistency achievements",
-      "triggers": ["user-achievement:streak-7-days", "user-achievement:streak-30-days", "user-achievement:streak-365-days"],
+      "name": "on-community-engagement",
+      "description": "Triggered when user engages with plugin community",
+      "triggers": ["action:community-interaction"],
       "actions": [
         {
-          "type": "award-consistency-badge",
+          "type": "facilitate-community",
           "data": {
-            "bronze-7-day": true,
-            "silver-30-day": true,
-            "gold-365-day": true
+            "moderate-discussions": true,
+            "answer-questions": true,
+            "highlight-contributions": true,
+            "build-relationships": true
           }
         },
         {
-          "type": "celebrate-milestone",
+          "type": "strengthen-community",
           "data": {
-            "special-message": true,
-            "unlock-bonuses": true,
-            "share-achievement": true
+            "identify-advocates": true,
+            "create-incentives": true,
+            "foster-contribution": true,
+            "measure-engagement": true
           }
         }
       ]
     }
   ],
   "metadata": {
-    "description": "Comprehensive hook system for Developer Roadmap learning plugin",
+    "description": "Comprehensive hook system for Custom Plugin UX Design",
     "version": "1.0.0",
-    "last-updated": "2025-11-18",
-    "hooks-count": 11,
-    "automation-triggers": {
-      "command-based": 4,
-      "user-action-based": 3,
-      "achievement-based": 2,
-      "time-based": 2
+    "hookCount": 11,
+    "categories": {
+      "creation": 1,
+      "design": 1,
+      "marketing": 1,
+      "quality": 4,
+      "optimization": 2,
+      "community": 2
     }
   },
   "configuration": {
-    "enable-notifications": true,
-    "enable-progress-tracking": true,
-    "enable-streak-calculation": true,
-    "enable-ai-recommendations": true,
-    "enable-certificate-issuance": true,
-    "notification-frequency": "real-time",
-    "progress-save-interval": "immediate",
-    "batch-calculations": false,
-    "debug-mode": false
+    "enableNotifications": true,
+    "enableAutoExecution": true,
+    "enableTracking": true,
+    "enableGuidance": true,
+    "autoSaveProgress": true,
+    "realTimeUpdates": true
   }
 }

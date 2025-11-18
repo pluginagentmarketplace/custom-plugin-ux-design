@@ -1,142 +1,129 @@
 {
-  "name": "developer-roadmap-plugin",
+  "name": "custom-plugin-ux-design",
   "version": "1.0.0",
-  "displayName": "Developer Roadmap Learning Path Plugin",
-  "description": "Comprehensive learning platform with 7 specialized agents guiding developers through 65+ career paths. Interactive roadmaps, skill tracking, and personalized learning journeys from fundamentals to advanced expertise.",
+  "displayName": "Custom Plugin UX Design",
+  "description": "Complete plugin development and UX design framework for Claude Code. Build, design, and launch professional plugins with guidance from 7 specialized experts.",
   "author": "Plugin Agent Marketplace",
   "license": "MIT",
-  "icon": "🚀",
+  "icon": "🎨",
   "tags": [
-    "learning",
-    "roadmap",
-    "career-development",
-    "skill-tracking",
-    "mentorship",
-    "frontend",
-    "backend",
-    "devops",
-    "data-science",
-    "mobile",
-    "databases",
-    "product-management"
+    "plugin-development",
+    "ux-design",
+    "ui-design",
+    "plugin-architecture",
+    "developer-experience",
+    "market-research",
+    "plugin-testing",
+    "plugin-monetization",
+    "documentation",
+    "community-building"
   ],
   "agents": [
     {
-      "name": "01-frontend-specialist",
-      "displayName": "Frontend Specialist",
-      "description": "Master modern web frameworks including React, Vue, and Angular. Expert in responsive design, component architecture, and frontend performance."
+      "name": "01-plugin-architect",
+      "displayName": "Plugin Architecture Specialist",
+      "description": "Expert in Claude Code plugin architecture, design patterns, and technical implementation. Specializes in building scalable, maintainable plugin systems."
     },
     {
-      "name": "02-backend-architect",
-      "displayName": "Backend Architect",
-      "description": "Build scalable backend systems with Node.js, Python, Java, Go, and Rust. Expert in API design, databases, and system architecture."
+      "name": "02-ux-designer",
+      "displayName": "UX/UI Design Expert",
+      "description": "Expert in user experience and interface design for plugins. Creates intuitive, accessible, and beautiful plugin interfaces with modern design principles."
     },
     {
-      "name": "03-devops-engineer",
-      "displayName": "DevOps Engineer",
-      "description": "Master containerization, orchestration, and CI/CD. Expert in Docker, Kubernetes, cloud platforms, and infrastructure automation."
+      "name": "03-market-researcher",
+      "displayName": "Market Research Analyst",
+      "description": "Expert in market analysis, competitive research, and user targeting. Identifies market opportunities and positions plugins for success."
     },
     {
-      "name": "04-data-ai-specialist",
-      "displayName": "Data & AI Specialist",
-      "description": "Expert in machine learning, deep learning, and LLM applications. Master data science with Python, TensorFlow, and modern AI frameworks."
+      "name": "04-devx-engineer",
+      "displayName": "Developer Experience Engineer",
+      "description": "Expert in developer experience design, API design, and documentation. Creates smooth workflows and excellent tools for plugin developers."
     },
     {
-      "name": "05-mobile-developer",
-      "displayName": "Mobile Developer",
-      "description": "Build native iOS (Swift) and Android (Kotlin) apps, or cross-platform with React Native and Flutter. Master mobile UI/UX and app deployment."
+      "name": "05-qa-tester",
+      "displayName": "Plugin Testing & QA Lead",
+      "description": "Expert in quality assurance and testing for plugins. Ensures reliability through comprehensive testing strategies and quality metrics."
     },
     {
-      "name": "06-database-architect",
-      "displayName": "Database Architect",
-      "description": "Design and optimize databases with PostgreSQL, MongoDB, Redis, and DynamoDB. Expert in data modeling, scaling, and performance."
+      "name": "06-growth-strategist",
+      "displayName": "Monetization & Growth Strategist",
+      "description": "Expert in plugin monetization, growth strategies, and business models. Develops sustainable business models and growth tactics."
     },
     {
-      "name": "07-product-growth-manager",
-      "displayName": "Product & Growth Manager",
-      "description": "Master product strategy, UX/UI design, user research, analytics, and growth hacking. Learn to build products users love and scale businesses."
+      "name": "07-community-manager",
+      "displayName": "Documentation & Community Manager",
+      "description": "Expert in plugin documentation, community engagement, and user support. Builds engaged communities and creates excellent documentation."
     }
   ],
   "skills": [
     {
-      "path": "skills/frontend-frameworks",
-      "name": "frontend-frameworks"
+      "path": "skills/plugin-architecture",
+      "name": "plugin-architecture"
     },
     {
-      "path": "skills/backend-technologies",
-      "name": "backend-technologies"
+      "path": "skills/ux-ui-design",
+      "name": "ux-ui-design"
     },
     {
-      "path": "skills/devops-tools",
-      "name": "devops-tools"
+      "path": "skills/market-research",
+      "name": "market-research"
     },
     {
-      "path": "skills/data-science",
-      "name": "data-science"
+      "path": "skills/developer-experience",
+      "name": "developer-experience"
     },
     {
-      "path": "skills/mobile-platforms",
-      "name": "mobile-platforms"
+      "path": "skills/plugin-testing",
+      "name": "plugin-testing"
     },
     {
-      "path": "skills/database-systems",
-      "name": "database-systems"
+      "path": "skills/monetization-strategy",
+      "name": "monetization-strategy"
     },
     {
-      "path": "skills/product-management",
-      "name": "product-management"
+      "path": "skills/documentation",
+      "name": "documentation"
     }
   ],
   "commands": [
     {
-      "path": "commands/roadmap",
-      "name": "roadmap"
+      "path": "commands/create-plugin",
+      "name": "create-plugin"
     },
     {
-      "path": "commands/learn",
-      "name": "learn"
+      "path": "commands/design-ux",
+      "name": "design-ux"
     },
     {
-      "path": "commands/progress",
-      "name": "progress"
+      "path": "commands/market-plugin",
+      "name": "market-plugin"
     },
     {
-      "path": "commands/assess",
-      "name": "assess"
+      "path": "commands/publish-plugin",
+      "name": "publish-plugin"
     }
   ],
   "keywords": [
-    "learning",
-    "career",
-    "developer",
-    "roadmap",
-    "skill-development",
-    "mentorship",
-    "frontend",
-    "backend",
-    "fullstack",
-    "devops",
-    "data-science",
-    "ai",
-    "machine-learning",
-    "mobile",
-    "ios",
-    "android",
-    "react",
-    "vue",
-    "angular",
-    "nodejs",
-    "python",
-    "java",
-    "go",
-    "rust",
-    "kubernetes",
-    "docker",
-    "postgres",
-    "mongodb",
-    "growth-hacking",
-    "product-management",
-    "ux-design"
+    "plugin",
+    "plugin-development",
+    "ux-design",
+    "ui-design",
+    "user-experience",
+    "interface-design",
+    "plugin-architecture",
+    "design-system",
+    "accessibility",
+    "developer-experience",
+    "api-design",
+    "documentation",
+    "market-research",
+    "growth-strategy",
+    "monetization",
+    "plugin-testing",
+    "quality-assurance",
+    "community-building",
+    "user-research",
+    "design-thinking"
   ],
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design",
   "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design",
@@ -144,9 +131,36 @@
   "documentation": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design/blob/main/README.md",
   "marketplace": {
     "featured": true,
-    "category": "Learning & Development",
+    "category": "Development & Tools",
+    "subcategories": ["Plugin Development", "UI/UX Design", "Developer Tools"],
     "downloads": 0,
     "rating": 5.0,
-    "reviews": 0
+    "reviews": 0,
+    "certified": false
+  },
+  "metadata": {
+    "targetAudience": ["Plugin Developers", "UX Designers", "Product Managers", "Entrepreneurs"],
+    "useCases": [
+      "Building Claude Code plugins",
+      "Designing plugin interfaces",
+      "Planning plugin strategy",
+      "Publishing plugins",
+      "Growing plugin user base"
+    ],
+    "features": [
+      "7 specialized agents",
+      "7 learning skills",
+      "4 command interfaces",
+      "Plugin scaffolding",
+      "UX design guidance",
+      "Market analysis tools",
+      "Publishing workflow",
+      "Testing strategies"
+    ],
+    "requirements": {
+      "claudeCodeVersion": "latest",
+      "platform": ["macOS", "Linux", "Windows"],
+      "dependencies": []
+    }
   }
 }

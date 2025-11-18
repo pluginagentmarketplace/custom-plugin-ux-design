@@ -1,0 +1,270 @@
+{
+  "version": "1.0",
+  "hooks": [
+    {
+      "name": "progress-tracker",
+      "description": "Track user progress through learning paths",
+      "triggers": [
+        "learn-started",
+        "learn-completed",
+        "assess-completed",
+        "project-started",
+        "project-completed"
+      ],
+      "actions": [
+        {
+          "type": "store",
+          "target": "user.progress",
+          "data": {
+            "timestamp": "now",
+            "milestone": "{{trigger.type}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "learning-path-recommender",
+      "description": "Recommend next learning steps based on progress",
+      "triggers": [
+        "learn-completed",
+        "assess-completed"
+      ],
+      "actions": [
+        {
+          "type": "analyze",
+          "source": "user.learning_data",
+          "algorithm": "content-based-recommendation"
+        },
+        {
+          "type": "suggest",
+          "target": "user.recommendations",
+          "personalization": true
+        }
+      ]
+    },
+    {
+      "name": "skill-validation",
+      "description": "Validate skill prerequisites before learning path",
+      "triggers": [
+        "learn-started"
+      ],
+      "actions": [
+        {
+          "type": "check",
+          "prerequisites": "{{role.prerequisites}}",
+          "against": "user.acquired_skills"
+        },
+        {
+          "type": "warn",
+          "if": "prerequisites_missing",
+          "message": "Consider completing prerequisite modules first"
+        }
+      ]
+    },
+    {
+      "name": "assessment-scoring",
+      "description": "Score and analyze assessment results",
+      "triggers": [
+        "assess-completed"
+      ],
+      "actions": [
+        {
+          "type": "calculate",
+          "score": "{{answers.correct / answers.total * 100}}",
+          "percentile": "compare-with-community"
+        },
+        {
+          "type": "identify",
+          "strengths": "topics_with_high_score",
+          "weaknesses": "topics_with_low_score"
+        },
+        {
+          "type": "generate",
+          "learning_plan": "personalized",
+          "focus_areas": "{{weaknesses}}"
+        }
+      ]
+    },
+    {
+      "name": "project-tracking",
+      "description": "Track and validate project completion",
+      "triggers": [
+        "project-started",
+        "project-completed"
+      ],
+      "actions": [
+        {
+          "type": "store",
+          "target": "user.projects",
+          "data": {
+            "project_id": "{{project.id}}",
+            "status": "{{trigger.type}}",
+            "timestamp": "now"
+          }
+        },
+        {
+          "type": "validate",
+          "if": "project-completed",
+          "criteria": "completion_requirements",
+          "success_callback": "award_badge"
+        }
+      ]
+    },
+    {
+      "name": "community-engagement",
+      "description": "Encourage community participation and sharing",
+      "triggers": [
+        "learn-completed",
+        "project-completed"
+      ],
+      "actions": [
+        {
+          "type": "suggest",
+          "action": "share_in_community",
+          "options": ["github", "twitter", "discord"]
+        },
+        {
+          "type": "notify",
+          "message": "Share your achievement with the community!",
+          "incentive": "community_points"
+        }
+      ]
+    },
+    {
+      "name": "badge-awards",
+      "description": "Award badges for milestones and achievements",
+      "triggers": [
+        "learn-completed",
+        "assess-completed",
+        "project-completed"
+      ],
+      "actions": [
+        {
+          "type": "check_milestone",
+          "milestones": [
+            "first_learn_path",
+            "three_roles_explored",
+            "assessment_completed",
+            "five_projects_built",
+            "community_contributor"
+          ]
+        },
+        {
+          "type": "award",
+          "badge": "{{milestone}}",
+          "if": "criteria_met"
+        }
+      ]
+    },
+    {
+      "name": "certification-pathway",
+      "description": "Track certification eligibility and progress",
+      "triggers": [
+        "learn-completed",
+        "project-completed",
+        "assess-completed"
+      ],
+      "actions": [
+        {
+          "type": "check",
+          "requirements": "certification.{{role}}.requirements",
+          "against": "user.completed_items"
+        },
+        {
+          "type": "notify",
+          "if": "certification_eligible",
+          "message": "You're eligible for {{certification}} certification!"
+        }
+      ]
+    },
+    {
+      "name": "personalized-content",
+      "description": "Personalize content recommendations",
+      "triggers": [
+        "browse",
+        "learn-started"
+      ],
+      "actions": [
+        {
+          "type": "analyze",
+          "source": "user.interests",
+          "based_on": ["browsing_history", "assessment_results", "completed_projects"]
+        },
+        {
+          "type": "customize",
+          "content": "learning_paths",
+          "projects": "user.interests",
+          "focus_areas": "user.gaps"
+        }
+      ]
+    },
+    {
+      "name": "performance-metrics",
+      "description": "Track learning performance and efficiency",
+      "triggers": [
+        "assess-completed",
+        "learn-completed"
+      ],
+      "actions": [
+        {
+          "type": "calculate",
+          "metrics": {
+            "learning_velocity": "hours_spent / topics_completed",
+            "retention_rate": "repeat_assessment_score / initial_score",
+            "project_quality": "code_review_score / average"
+          }
+        },
+        {
+          "type": "store",
+          "target": "user.analytics",
+          "data": "{{metrics}}"
+        }
+      ]
+    },
+    {
+      "name": "mentorship-matching",
+      "description": "Match users with mentors based on experience",
+      "triggers": [
+        "expert-request",
+        "help-needed"
+      ],
+      "actions": [
+        {
+          "type": "search",
+          "query": "mentor_pool",
+          "criteria": {
+            "expertise": "{{user.learning_topic}}",
+            "availability": true,
+            "rating": ">= 4.5"
+          }
+        },
+        {
+          "type": "match",
+          "algorithm": "skill-match + timezone + language",
+          "notify_both_parties": true
+        }
+      ]
+    },
+    {
+      "name": "learning-reminders",
+      "description": "Send personalized learning reminders",
+      "triggers": [
+        "daily",
+        "weekly"
+      ],
+      "actions": [
+        {
+          "type": "check",
+          "user_activity": "last_login",
+          "days_inactive": "> 3"
+        },
+        {
+          "type": "send",
+          "if": "inactive",
+          "message": "personalized_learning_reminder",
+          "content": "next_recommended_module"
+        }
+      ]
+    }
+  ]
+}

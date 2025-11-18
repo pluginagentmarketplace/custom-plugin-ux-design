@@ -1,0 +1,123 @@
+{
+  "name": "ultrathink",
+  "version": "1.0.0",
+  "description": "Ultra-modern, comprehensive developer roadmap and skill assessment plugin based on 69 professional development roles. Master any tech stack with AI-guided learning paths, skill assessments, and hands-on projects.",
+  "author": {
+    "name": "Ultrathink Team",
+    "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "developer-roadmap",
+    "learning-paths",
+    "skill-assessment",
+    "career-development",
+    "tech-stack",
+    "ai-agents",
+    "coding-bootcamp",
+    "professional-development"
+  ],
+  "agents": [
+    {
+      "name": "ai-data-science-specialist",
+      "description": "Expert in AI, Data Science, ML, and MLOps roadmaps",
+      "file": "agents/01-ai-data-science-specialist.md"
+    },
+    {
+      "name": "backend-frameworks-expert",
+      "description": "Specializes in Backend development, frameworks, and full-stack paths",
+      "file": "agents/02-backend-frameworks-expert.md"
+    },
+    {
+      "name": "frontend-mobile-innovator",
+      "description": "Expert in Frontend, Mobile development, and modern UI/UX practices",
+      "file": "agents/03-frontend-mobile-innovator.md"
+    },
+    {
+      "name": "languages-fundamentals-guide",
+      "description": "Master of programming languages and computer science fundamentals",
+      "file": "agents/04-languages-fundamentals-guide.md"
+    },
+    {
+      "name": "devops-infrastructure-architect",
+      "description": "Expert in DevOps, Cloud, and Infrastructure-as-Code practices",
+      "file": "agents/05-devops-infrastructure-architect.md"
+    },
+    {
+      "name": "architecture-security-specialist",
+      "description": "Specializes in system architecture, design patterns, and security",
+      "file": "agents/06-architecture-security-specialist.md"
+    },
+    {
+      "name": "management-quality-leader",
+      "description": "Guides through management, QA, and specialized technical roles",
+      "file": "agents/07-management-quality-leader.md"
+    }
+  ],
+  "commands": [
+    {
+      "name": "learn",
+      "description": "Start a personalized learning journey",
+      "file": "commands/learn.md"
+    },
+    {
+      "name": "browse",
+      "description": "Explore all available roadmaps and roles",
+      "file": "commands/browse.md"
+    },
+    {
+      "name": "assess",
+      "description": "Take a skills assessment to find your learning path",
+      "file": "commands/assess.md"
+    },
+    {
+      "name": "projects",
+      "description": "Discover hands-on projects for skill development",
+      "file": "commands/projects.md"
+    }
+  ],
+  "skills": [
+    {
+      "name": "ai-data-science",
+      "description": "Master AI, Data Science, ML, and MLOps",
+      "file": "skills/ai-data-science/SKILL.md"
+    },
+    {
+      "name": "backend-frameworks",
+      "description": "Expert-level backend development and frameworks",
+      "file": "skills/backend-frameworks/SKILL.md"
+    },
+    {
+      "name": "frontend-mobile",
+      "description": "Modern frontend and mobile development mastery",
+      "file": "skills/frontend-mobile/SKILL.md"
+    },
+    {
+      "name": "languages",
+      "description": "Programming languages and computer science fundamentals",
+      "file": "skills/languages/SKILL.md"
+    },
+    {
+      "name": "devops-cloud",
+      "description": "DevOps, cloud infrastructure, and deployment strategies",
+      "file": "skills/devops-infrastructure/SKILL.md"
+    },
+    {
+      "name": "architecture-security",
+      "description": "System architecture, design patterns, and security",
+      "file": "skills/architecture-security/SKILL.md"
+    },
+    {
+      "name": "management-quality",
+      "description": "Technical management, QA, and specialized roles",
+      "file": "skills/management-specialized/SKILL.md"
+    }
+  ],
+  "hooks": {
+    "file": "hooks/hooks.json"
+  }
+}

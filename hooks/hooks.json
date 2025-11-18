@@ -1,0 +1,357 @@
+{
+  "hooks": [
+    {
+      "name": "on-learning-start",
+      "description": "Triggered when user starts a new learning path",
+      "triggers": ["command:learn"],
+      "actions": [
+        {
+          "type": "init-progress-tracker",
+          "data": {
+            "initialize-metadata": true,
+            "set-baseline-assessment": true,
+            "create-learning-plan": true
+          }
+        },
+        {
+          "type": "notification",
+          "data": {
+            "message": "Welcome! Your personalized learning journey has begun.",
+            "level": "info"
+          }
+        }
+      ]
+    },
+    {
+      "name": "on-topic-completion",
+      "description": "Triggered when user completes a learning topic",
+      "triggers": ["user-action:topic-completed"],
+      "actions": [
+        {
+          "type": "update-progress",
+          "data": {
+            "mark-as-complete": true,
+            "update-completion-timestamp": true,
+            "calculate-streak": true
+          }
+        },
+        {
+          "type": "suggest-next-topic",
+          "data": {
+            "based-on": "learning-path",
+            "difficulty-adjustment": true
+          }
+        },
+        {
+          "type": "achievement-check",
+          "data": {
+            "unlock-badges": true,
+            "notify-on-milestone": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "on-assessment-completion",
+      "description": "Triggered when user completes an assessment",
+      "triggers": ["command:assess"],
+      "actions": [
+        {
+          "type": "score-assessment",
+          "data": {
+            "calculate-percentile": true,
+            "compare-to-peers": true,
+            "determine-proficiency-level": true
+          }
+        },
+        {
+          "type": "provide-feedback",
+          "data": {
+            "generate-detailed-report": true,
+            "identify-weak-areas": true,
+            "recommend-resources": true
+          }
+        },
+        {
+          "type": "update-certification-status",
+          "data": {
+            "check-certification-eligibility": true,
+            "award-certificate-if-qualified": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "on-daily-check-in",
+      "description": "Triggered when user opens the plugin daily",
+      "triggers": ["plugin:opened", "time:once-per-day"],
+      "actions": [
+        {
+          "type": "display-dashboard",
+          "data": {
+            "show-current-progress": true,
+            "highlight-next-steps": true,
+            "show-achievements": true
+          }
+        },
+        {
+          "type": "streak-management",
+          "data": {
+            "check-if-streak-continues": true,
+            "calculate-learning-streak": true,
+            "notify-on-streak-milestones": true
+          }
+        },
+        {
+          "type": "motivational-reminder",
+          "data": {
+            "personalized-message": true,
+            "based-on-progress": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "on-progress-query",
+      "description": "Triggered when user views progress with /progress command",
+      "triggers": ["command:progress"],
+      "actions": [
+        {
+          "type": "calculate-metrics",
+          "data": {
+            "completion-percentage": true,
+            "time-invested": true,
+            "learning-velocity": true,
+            "estimated-completion-date": true
+          }
+        },
+        {
+          "type": "generate-insights",
+          "data": {
+            "ai-analysis": true,
+            "trend-detection": true,
+            "recommendations": true
+          }
+        },
+        {
+          "type": "comparison-metrics",
+          "data": {
+            "pace-vs-recommended": true,
+            "performance-vs-peers": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "on-skill-unlock",
+      "description": "Triggered when user masters a new skill",
+      "triggers": ["user-achievement:skill-mastered"],
+      "actions": [
+        {
+          "type": "celebrate-achievement",
+          "data": {
+            "show-badge": true,
+            "play-notification": true,
+            "add-to-portfolio": true
+          }
+        },
+        {
+          "type": "update-skill-registry",
+          "data": {
+            "mark-skill-as-mastered": true,
+            "add-to-verified-skills": true,
+            "make-shareable": true
+          }
+        },
+        {
+          "type": "recommend-related-skills",
+          "data": {
+            "suggest-next-skills": true,
+            "show-career-paths": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "on-project-submission",
+      "description": "Triggered when user submits a hands-on project",
+      "triggers": ["user-action:project-submitted"],
+      "actions": [
+        {
+          "type": "validate-project",
+          "data": {
+            "check-completeness": true,
+            "verify-requirements": true,
+            "test-functionality": true
+          }
+        },
+        {
+          "type": "provide-code-review",
+          "data": {
+            "analyze-code-quality": true,
+            "check-best-practices": true,
+            "generate-feedback": true
+          }
+        },
+        {
+          "type": "award-project-credit",
+          "data": {
+            "mark-as-complete": true,
+            "provide-score": true,
+            "unlock-next-topics": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "on-learning-milestone",
+      "description": "Triggered when user reaches major learning milestones",
+      "triggers": ["user-achievement:stage-complete", "user-achievement:role-complete"],
+      "actions": [
+        {
+          "type": "issue-certificate",
+          "data": {
+            "generate-certificate": true,
+            "add-to-credentials": true,
+            "make-shareable": true
+          }
+        },
+        {
+          "type": "celebrate",
+          "data": {
+            "special-notification": true,
+            "milestone-badge": true,
+            "add-to-achievements": true
+          }
+        },
+        {
+          "type": "suggest-next-path",
+          "data": {
+            "recommend-advanced-roles": true,
+            "suggest-complementary-paths": true,
+            "show-career-options": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "on-knowledge-gap-detected",
+      "description": "Triggered when assessment reveals knowledge gaps",
+      "triggers": ["assessment-result:low-score"],
+      "actions": [
+        {
+          "type": "identify-gaps",
+          "data": {
+            "analyze-failed-questions": true,
+            "group-by-topic": true
+          }
+        },
+        {
+          "type": "create-remedial-plan",
+          "data": {
+            "recommend-review-topics": true,
+            "suggest-alternative-resources": true,
+            "schedule-retake": true
+          }
+        },
+        {
+          "type": "notify-agent",
+          "data": {
+            "alert-specialist": true,
+            "request-additional-help": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "on-roadmap-browse",
+      "description": "Triggered when user views roadmaps with /roadmap command",
+      "triggers": ["command:roadmap"],
+      "actions": [
+        {
+          "type": "fetch-roadmaps",
+          "data": {
+            "load-developer-roadmap-catalog": true,
+            "cache-popular-roadmaps": true
+          }
+        },
+        {
+          "type": "personalize-recommendations",
+          "data": {
+            "suggest-based-on-interests": true,
+            "highlight-relevant-roles": true,
+            "show-prerequisites": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "on-extended-inactivity",
+      "description": "Triggered when user hasn't engaged for 7+ days",
+      "triggers": ["time:inactivity-7-days"],
+      "actions": [
+        {
+          "type": "send-reminder",
+          "data": {
+            "personalized-message": true,
+            "highlight-progress": true,
+            "motivate-continuation": true
+          }
+        },
+        {
+          "type": "pause-streak-warning",
+          "data": {
+            "warn-about-streak-loss": true,
+            "encourage-daily-learning": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "on-learning-consistency",
+      "description": "Triggered on daily learning consistency achievements",
+      "triggers": ["user-achievement:streak-7-days", "user-achievement:streak-30-days", "user-achievement:streak-365-days"],
+      "actions": [
+        {
+          "type": "award-consistency-badge",
+          "data": {
+            "bronze-7-day": true,
+            "silver-30-day": true,
+            "gold-365-day": true
+          }
+        },
+        {
+          "type": "celebrate-milestone",
+          "data": {
+            "special-message": true,
+            "unlock-bonuses": true,
+            "share-achievement": true
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "description": "Comprehensive hook system for Developer Roadmap learning plugin",
+    "version": "1.0.0",
+    "last-updated": "2025-11-18",
+    "hooks-count": 11,
+    "automation-triggers": {
+      "command-based": 4,
+      "user-action-based": 3,
+      "achievement-based": 2,
+      "time-based": 2
+    }
+  },
+  "configuration": {
+    "enable-notifications": true,
+    "enable-progress-tracking": true,
+    "enable-streak-calculation": true,
+    "enable-ai-recommendations": true,
+    "enable-certificate-issuance": true,
+    "notification-frequency": "real-time",
+    "progress-save-interval": "immediate",
+    "batch-calculations": false,
+    "debug-mode": false
+  }
+}

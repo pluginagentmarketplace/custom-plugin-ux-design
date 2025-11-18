@@ -1,0 +1,152 @@
+{
+  "name": "developer-roadmap-plugin",
+  "version": "1.0.0",
+  "displayName": "Developer Roadmap Learning Path Plugin",
+  "description": "Comprehensive learning platform with 7 specialized agents guiding developers through 65+ career paths. Interactive roadmaps, skill tracking, and personalized learning journeys from fundamentals to advanced expertise.",
+  "author": "Plugin Agent Marketplace",
+  "license": "MIT",
+  "icon": "🚀",
+  "tags": [
+    "learning",
+    "roadmap",
+    "career-development",
+    "skill-tracking",
+    "mentorship",
+    "frontend",
+    "backend",
+    "devops",
+    "data-science",
+    "mobile",
+    "databases",
+    "product-management"
+  ],
+  "agents": [
+    {
+      "name": "01-frontend-specialist",
+      "displayName": "Frontend Specialist",
+      "description": "Master modern web frameworks including React, Vue, and Angular. Expert in responsive design, component architecture, and frontend performance."
+    },
+    {
+      "name": "02-backend-architect",
+      "displayName": "Backend Architect",
+      "description": "Build scalable backend systems with Node.js, Python, Java, Go, and Rust. Expert in API design, databases, and system architecture."
+    },
+    {
+      "name": "03-devops-engineer",
+      "displayName": "DevOps Engineer",
+      "description": "Master containerization, orchestration, and CI/CD. Expert in Docker, Kubernetes, cloud platforms, and infrastructure automation."
+    },
+    {
+      "name": "04-data-ai-specialist",
+      "displayName": "Data & AI Specialist",
+      "description": "Expert in machine learning, deep learning, and LLM applications. Master data science with Python, TensorFlow, and modern AI frameworks."
+    },
+    {
+      "name": "05-mobile-developer",
+      "displayName": "Mobile Developer",
+      "description": "Build native iOS (Swift) and Android (Kotlin) apps, or cross-platform with React Native and Flutter. Master mobile UI/UX and app deployment."
+    },
+    {
+      "name": "06-database-architect",
+      "displayName": "Database Architect",
+      "description": "Design and optimize databases with PostgreSQL, MongoDB, Redis, and DynamoDB. Expert in data modeling, scaling, and performance."
+    },
+    {
+      "name": "07-product-growth-manager",
+      "displayName": "Product & Growth Manager",
+      "description": "Master product strategy, UX/UI design, user research, analytics, and growth hacking. Learn to build products users love and scale businesses."
+    }
+  ],
+  "skills": [
+    {
+      "path": "skills/frontend-frameworks",
+      "name": "frontend-frameworks"
+    },
+    {
+      "path": "skills/backend-technologies",
+      "name": "backend-technologies"
+    },
+    {
+      "path": "skills/devops-tools",
+      "name": "devops-tools"
+    },
+    {
+      "path": "skills/data-science",
+      "name": "data-science"
+    },
+    {
+      "path": "skills/mobile-platforms",
+      "name": "mobile-platforms"
+    },
+    {
+      "path": "skills/database-systems",
+      "name": "database-systems"
+    },
+    {
+      "path": "skills/product-management",
+      "name": "product-management"
+    }
+  ],
+  "commands": [
+    {
+      "path": "commands/roadmap",
+      "name": "roadmap"
+    },
+    {
+      "path": "commands/learn",
+      "name": "learn"
+    },
+    {
+      "path": "commands/progress",
+      "name": "progress"
+    },
+    {
+      "path": "commands/assess",
+      "name": "assess"
+    }
+  ],
+  "keywords": [
+    "learning",
+    "career",
+    "developer",
+    "roadmap",
+    "skill-development",
+    "mentorship",
+    "frontend",
+    "backend",
+    "fullstack",
+    "devops",
+    "data-science",
+    "ai",
+    "machine-learning",
+    "mobile",
+    "ios",
+    "android",
+    "react",
+    "vue",
+    "angular",
+    "nodejs",
+    "python",
+    "java",
+    "go",
+    "rust",
+    "kubernetes",
+    "docker",
+    "postgres",
+    "mongodb",
+    "growth-hacking",
+    "product-management",
+    "ux-design"
+  ],
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design",
+  "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design",
+  "bugs": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design/issues",
+  "documentation": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design/blob/main/README.md",
+  "marketplace": {
+    "featured": true,
+    "category": "Learning & Development",
+    "downloads": 0,
+    "rating": 5.0,
+    "reviews": 0
+  }
+}

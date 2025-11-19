@@ -1,0 +1,166 @@
+{
+  "name": "custom-plugin-ux-design",
+  "version": "1.0.0",
+  "displayName": "Custom Plugin UX Design",
+  "description": "Complete plugin development and UX design framework for Claude Code. Build, design, and launch professional plugins with guidance from 7 specialized experts.",
+  "author": "Plugin Agent Marketplace",
+  "license": "MIT",
+  "icon": "🎨",
+  "tags": [
+    "plugin-development",
+    "ux-design",
+    "ui-design",
+    "plugin-architecture",
+    "developer-experience",
+    "market-research",
+    "plugin-testing",
+    "plugin-monetization",
+    "documentation",
+    "community-building"
+  ],
+  "agents": [
+    {
+      "name": "01-plugin-architect",
+      "displayName": "Plugin Architecture Specialist",
+      "description": "Expert in Claude Code plugin architecture, design patterns, and technical implementation. Specializes in building scalable, maintainable plugin systems."
+    },
+    {
+      "name": "02-ux-designer",
+      "displayName": "UX/UI Design Expert",
+      "description": "Expert in user experience and interface design for plugins. Creates intuitive, accessible, and beautiful plugin interfaces with modern design principles."
+    },
+    {
+      "name": "03-market-researcher",
+      "displayName": "Market Research Analyst",
+      "description": "Expert in market analysis, competitive research, and user targeting. Identifies market opportunities and positions plugins for success."
+    },
+    {
+      "name": "04-devx-engineer",
+      "displayName": "Developer Experience Engineer",
+      "description": "Expert in developer experience design, API design, and documentation. Creates smooth workflows and excellent tools for plugin developers."
+    },
+    {
+      "name": "05-qa-tester",
+      "displayName": "Plugin Testing & QA Lead",
+      "description": "Expert in quality assurance and testing for plugins. Ensures reliability through comprehensive testing strategies and quality metrics."
+    },
+    {
+      "name": "06-growth-strategist",
+      "displayName": "Monetization & Growth Strategist",
+      "description": "Expert in plugin monetization, growth strategies, and business models. Develops sustainable business models and growth tactics."
+    },
+    {
+      "name": "07-community-manager",
+      "displayName": "Documentation & Community Manager",
+      "description": "Expert in plugin documentation, community engagement, and user support. Builds engaged communities and creates excellent documentation."
+    }
+  ],
+  "skills": [
+    {
+      "path": "skills/plugin-architecture",
+      "name": "plugin-architecture"
+    },
+    {
+      "path": "skills/ux-ui-design",
+      "name": "ux-ui-design"
+    },
+    {
+      "path": "skills/market-research",
+      "name": "market-research"
+    },
+    {
+      "path": "skills/developer-experience",
+      "name": "developer-experience"
+    },
+    {
+      "path": "skills/plugin-testing",
+      "name": "plugin-testing"
+    },
+    {
+      "path": "skills/monetization-strategy",
+      "name": "monetization-strategy"
+    },
+    {
+      "path": "skills/documentation",
+      "name": "documentation"
+    }
+  ],
+  "commands": [
+    {
+      "path": "commands/create-plugin",
+      "name": "create-plugin"
+    },
+    {
+      "path": "commands/design-ux",
+      "name": "design-ux"
+    },
+    {
+      "path": "commands/market-plugin",
+      "name": "market-plugin"
+    },
+    {
+      "path": "commands/publish-plugin",
+      "name": "publish-plugin"
+    }
+  ],
+  "keywords": [
+    "plugin",
+    "plugin-development",
+    "ux-design",
+    "ui-design",
+    "user-experience",
+    "interface-design",
+    "plugin-architecture",
+    "design-system",
+    "accessibility",
+    "developer-experience",
+    "api-design",
+    "documentation",
+    "market-research",
+    "growth-strategy",
+    "monetization",
+    "plugin-testing",
+    "quality-assurance",
+    "community-building",
+    "user-research",
+    "design-thinking"
+  ],
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design",
+  "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design",
+  "bugs": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design/issues",
+  "documentation": "https://github.com/pluginagentmarketplace/custom-plugin-ux-design/blob/main/README.md",
+  "marketplace": {
+    "featured": true,
+    "category": "Development & Tools",
+    "subcategories": ["Plugin Development", "UI/UX Design", "Developer Tools"],
+    "downloads": 0,
+    "rating": 5.0,
+    "reviews": 0,
+    "certified": false
+  },
+  "metadata": {
+    "targetAudience": ["Plugin Developers", "UX Designers", "Product Managers", "Entrepreneurs"],
+    "useCases": [
+      "Building Claude Code plugins",
+      "Designing plugin interfaces",
+      "Planning plugin strategy",
+      "Publishing plugins",
+      "Growing plugin user base"
+    ],
+    "features": [
+      "7 specialized agents",
+      "7 learning skills",
+      "4 command interfaces",
+      "Plugin scaffolding",
+      "UX design guidance",
+      "Market analysis tools",
+      "Publishing workflow",
+      "Testing strategies"
+    ],
+    "requirements": {
+      "claudeCodeVersion": "latest",
+      "platform": ["macOS", "Linux", "Windows"],
+      "dependencies": []
+    }
+  }
+}

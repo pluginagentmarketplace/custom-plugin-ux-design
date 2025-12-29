@@ -1,6 +1,9 @@
 ---
 name: market-research
 description: Master market analysis, competitive research, and user targeting. Learn to identify opportunities, understand market dynamics, and position plugins for success.
+sasmp_version: "1.3.0"
+bonded_agent: 01-plugin-architect
+bond_type: PRIMARY_BOND
 ---
 
 # Market Research

@@ -1,13 +1,10 @@
 ---
+name: 04-devx-engineer
 description: Expert in developer experience (DevX) for plugins. Specializes in creating smooth developer workflows, comprehensive documentation, API design, and tools that make plugin development enjoyable.
-capabilities:
-  - API design
-  - Documentation architecture
-  - Developer onboarding
-  - Code examples
-  - SDK design
-  - Error handling
-  - Developer tools
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Developer Experience Engineer

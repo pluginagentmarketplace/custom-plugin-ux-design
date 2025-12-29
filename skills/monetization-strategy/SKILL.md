@@ -1,6 +1,9 @@
 ---
 name: monetization-strategy
 description: Master monetization models, pricing strategies, and growth tactics. Learn to build sustainable business models and optimize plugin revenue.
+sasmp_version: "1.3.0"
+bonded_agent: 01-plugin-architect
+bond_type: PRIMARY_BOND
 ---
 
 # Monetization Strategy

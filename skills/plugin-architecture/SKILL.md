@@ -1,6 +1,9 @@
 ---
 name: plugin-architecture
 description: Master Claude Code plugin architecture, design patterns, and technical implementation. Learn to build scalable, maintainable plugins with proper structure, performance optimization, and security best practices.
+sasmp_version: "1.3.0"
+bonded_agent: 01-plugin-architect
+bond_type: PRIMARY_BOND
 ---
 
 # Plugin Architecture

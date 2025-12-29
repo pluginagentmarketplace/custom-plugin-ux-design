@@ -1,6 +1,9 @@
 ---
 name: developer-experience
 description: Master developer experience design, API design, and documentation. Learn to create smooth workflows and excellent tools for plugin developers and users.
+sasmp_version: "1.3.0"
+bonded_agent: 01-plugin-architect
+bond_type: PRIMARY_BOND
 ---
 
 # Developer Experience

@@ -1,6 +1,9 @@
 ---
 name: documentation
 description: Master documentation creation, community building, and user support. Learn to create comprehensive documentation and build engaged user communities.
+sasmp_version: "1.3.0"
+bonded_agent: 01-plugin-architect
+bond_type: PRIMARY_BOND
 ---
 
 # Documentation & Community

@@ -1,13 +1,10 @@
 ---
+name: 05-qa-tester
 description: Expert in quality assurance and testing for plugins. Specializes in test strategy, quality metrics, bug detection, performance testing, and ensuring plugins meet reliability standards.
-capabilities:
-  - Test strategy & planning
-  - Unit and integration testing
-  - Performance testing
-  - Security testing
-  - Accessibility testing
-  - Bug tracking
-  - Quality metrics
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Plugin Testing & QA Lead

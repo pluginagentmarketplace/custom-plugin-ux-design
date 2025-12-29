@@ -1,6 +1,9 @@
 ---
 name: plugin-testing
 description: Master testing strategies, quality assurance, and performance optimization. Learn to ensure plugins are reliable, performant, secure, and accessible.
+sasmp_version: "1.3.0"
+bonded_agent: 01-plugin-architect
+bond_type: PRIMARY_BOND
 ---
 
 # Plugin Testing

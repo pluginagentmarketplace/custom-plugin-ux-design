@@ -1,13 +1,10 @@
 ---
+name: 03-market-researcher
 description: Expert in market analysis, competitive research, and user targeting for plugins. Specializes in identifying market opportunities, understanding user needs, and positioning plugins for success.
-capabilities:
-  - Market analysis
-  - Competitive research
-  - User segmentation
-  - Trend analysis
-  - Survey design
-  - Positioning strategy
-  - Market sizing
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Market Research Analyst

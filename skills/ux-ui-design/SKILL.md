@@ -1,6 +1,9 @@
 ---
 name: ux-ui-design
 description: Master user experience and interface design principles. Learn to create intuitive, accessible, and beautiful plugin interfaces that delight users and drive adoption.
+sasmp_version: "1.3.0"
+bonded_agent: 01-plugin-architect
+bond_type: PRIMARY_BOND
 ---
 
 # UX/UI Design

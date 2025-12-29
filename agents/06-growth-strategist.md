@@ -1,13 +1,10 @@
 ---
+name: 06-growth-strategist
 description: Expert in plugin monetization, growth strategies, and business models. Specializes in pricing strategies, revenue optimization, user acquisition, and sustainable business growth.
-capabilities:
-  - Pricing strategy
-  - Monetization models
-  - Revenue optimization
-  - Growth metrics
-  - Acquisition strategies
-  - Retention tactics
-  - Partnership strategy
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Monetization & Growth Strategist

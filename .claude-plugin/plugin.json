@@ -1,11 +1,11 @@
 {
-  "name": "custom-plugin-ux-design",
+  "name": "ux-design-assistant",
   "version": "1.0.0",
   "displayName": "Custom Plugin UX Design",
-  "description": "Complete plugin development and UX design framework for Claude Code. Build, design, and launch professional plugins with guidance from 7 specialized experts.",
+  "description": "UX design plugin with agents for user research, UI design, prototyping, and accessibility",
   "author": "Plugin Agent Marketplace",
   "license": "SEE LICENSE IN LICENSE",
-  "icon": "🎨",
+  "icon": "\ud83c\udfa8",
   "tags": [
     "plugin-development",
     "ux-design",
@@ -19,71 +19,22 @@
     "community-building"
   ],
   "agents": [
-    {
-      "name": "01-plugin-architect",
-      "displayName": "Plugin Architecture Specialist",
-      "description": "Expert in Claude Code plugin architecture, design patterns, and technical implementation. Specializes in building scalable, maintainable plugin systems."
-    },
-    {
-      "name": "02-ux-designer",
-      "displayName": "UX/UI Design Expert",
-      "description": "Expert in user experience and interface design for plugins. Creates intuitive, accessible, and beautiful plugin interfaces with modern design principles."
-    },
-    {
-      "name": "03-market-researcher",
-      "displayName": "Market Research Analyst",
-      "description": "Expert in market analysis, competitive research, and user targeting. Identifies market opportunities and positions plugins for success."
-    },
-    {
-      "name": "04-devx-engineer",
-      "displayName": "Developer Experience Engineer",
-      "description": "Expert in developer experience design, API design, and documentation. Creates smooth workflows and excellent tools for plugin developers."
-    },
-    {
-      "name": "05-qa-tester",
-      "displayName": "Plugin Testing & QA Lead",
-      "description": "Expert in quality assurance and testing for plugins. Ensures reliability through comprehensive testing strategies and quality metrics."
-    },
-    {
-      "name": "06-growth-strategist",
-      "displayName": "Monetization & Growth Strategist",
-      "description": "Expert in plugin monetization, growth strategies, and business models. Develops sustainable business models and growth tactics."
-    },
-    {
-      "name": "07-community-manager",
-      "displayName": "Documentation & Community Manager",
-      "description": "Expert in plugin documentation, community engagement, and user support. Builds engaged communities and creates excellent documentation."
-    }
+    "./agents/01-ux-research.md",
+    "./agents/02-ui-design.md",
+    "./agents/03-interaction-design.md",
+    "./agents/04-prototyping.md",
+    "./agents/05-accessibility.md",
+    "./agents/06-mobile-ux.md",
+    "./agents/07-ux-writing.md"
   ],
   "skills": [
-    {
-      "path": "skills/plugin-architecture",
-      "name": "plugin-architecture"
-    },
-    {
-      "path": "skills/ux-ui-design",
-      "name": "ux-ui-design"
-    },
-    {
-      "path": "skills/market-research",
-      "name": "market-research"
-    },
-    {
-      "path": "skills/developer-experience",
-      "name": "developer-experience"
-    },
-    {
-      "path": "skills/plugin-testing",
-      "name": "plugin-testing"
-    },
-    {
-      "path": "skills/monetization-strategy",
-      "name": "monetization-strategy"
-    },
-    {
-      "path": "skills/documentation",
-      "name": "documentation"
-    }
+    "./skills/user-research/SKILL.md",
+    "./skills/ui-design/SKILL.md",
+    "./skills/interaction-design/SKILL.md",
+    "./skills/prototyping/SKILL.md",
+    "./skills/accessibility/SKILL.md",
+    "./skills/mobile-ux/SKILL.md",
+    "./skills/ux-writing/SKILL.md"
   ],
   "commands": [
     {

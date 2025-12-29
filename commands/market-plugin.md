@@ -1,3 +1,9 @@
+---
+name: market-plugin
+description: plugin
+allowed-tools: Read
+---
+
 # /market-plugin
 
 Develop market strategy and growth tactics for your plugin with expert guidance from the Market Research Analyst and Growth Strategist.

@@ -1,3 +1,9 @@
+---
+name: create-plugin
+description: plugin
+allowed-tools: Read
+---
+
 # /create-plugin
 
 Start building a new Claude Code plugin from scratch with expert guidance from the Plugin Architecture Specialist.

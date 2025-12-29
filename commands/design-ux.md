@@ -1,3 +1,9 @@
+---
+name: design-ux
+description: ux
+allowed-tools: Read
+---
+
 # /design-ux
 
 Design intuitive and beautiful interfaces for your plugin with expert guidance from the UX/UI Design Expert.

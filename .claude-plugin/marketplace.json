@@ -1,0 +1,15 @@
+{
+  "name": "pluginagentmarketplace-ux-design",
+  "owner": {
+    "name": "Plugin Agent Marketplace",
+    "email": "pluginagentmarketplace@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "custom-plugin-ux-design",
+      "source": "./",
+      "description": "Claude Code plugin for ux design development",
+      "version": "1.0.0"
+    }
+  ]
+}

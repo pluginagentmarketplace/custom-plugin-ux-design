@@ -4,7 +4,7 @@
   "displayName": "Custom Plugin UX Design",
   "description": "Complete plugin development and UX design framework for Claude Code. Build, design, and launch professional plugins with guidance from 7 specialized experts.",
   "author": "Plugin Agent Marketplace",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "icon": "🎨",
   "tags": [
     "plugin-development",
@@ -132,14 +132,23 @@
   "marketplace": {
     "featured": true,
     "category": "Development & Tools",
-    "subcategories": ["Plugin Development", "UI/UX Design", "Developer Tools"],
+    "subcategories": [
+      "Plugin Development",
+      "UI/UX Design",
+      "Developer Tools"
+    ],
     "downloads": 0,
     "rating": 5.0,
     "reviews": 0,
     "certified": false
   },
   "metadata": {
-    "targetAudience": ["Plugin Developers", "UX Designers", "Product Managers", "Entrepreneurs"],
+    "targetAudience": [
+      "Plugin Developers",
+      "UX Designers",
+      "Product Managers",
+      "Entrepreneurs"
+    ],
     "useCases": [
       "Building Claude Code plugins",
       "Designing plugin interfaces",
@@ -159,7 +168,11 @@
     ],
     "requirements": {
       "claudeCodeVersion": "latest",
-      "platform": ["macOS", "Linux", "Windows"],
+      "platform": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
       "dependencies": []
     }
   }

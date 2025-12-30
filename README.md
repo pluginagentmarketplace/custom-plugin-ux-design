@@ -1,12 +1,12 @@
 <div align="center">
 
 <!-- Animated Typing Banner -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Ux+Design+Assistant;7+Agents+%7C+7+Skills;Claude+Code+Plugin" alt="Ux Design Assistant" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=UX+Design+Assistant;7+Agents+%7C+7+Skills;Claude+Code+Plugin" alt="UX Design Assistant" />
 
 <br/>
 
 <!-- Badge Row 1: Status Badges -->
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-ux-design/releases)
+[![Version](https://img.shields.io/badge/Version-1.1.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-ux-design/releases)
 [![License](https://img.shields.io/badge/License-Custom-yellow?style=for-the-badge)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=for-the-badge)](#)
 [![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=for-the-badge)](#)
@@ -19,243 +19,317 @@
 <br/>
 
 <!-- Quick CTA Row -->
-[📦 **Install Now**](#-quick-start) · [🤖 **Explore Agents**](#-agents) · [📖 **Documentation**](#-documentation) · [⭐ **Star this repo**](https://github.com/pluginagentmarketplace/custom-plugin-ux-design)
+[**Install Now**](#-quick-start) | [**Explore Agents**](#-agents) | [**Documentation**](#-documentation)
 
 ---
 
 ### What is this?
 
-> **Ux Design Assistant** is a Claude Code plugin with **7 agents** and **7 skills** for ux design development.
+> **UX Design Assistant** is a production-grade Claude Code plugin with **7 specialized agents** and **7 atomic skills** for comprehensive UX design workflows.
 
 </div>
 
 ---
 
-## 📑 Table of Contents
-
-<details>
-<summary>Click to expand</summary>
+## Table of Contents
 
 - [Quick Start](#-quick-start)
 - [Features](#-features)
 - [Agents](#-agents)
 - [Skills](#-skills)
 - [Commands](#-commands)
-- [Documentation](#-documentation)
+- [Architecture](#-architecture)
+- [Troubleshooting](#-troubleshooting)
 - [Contributing](#-contributing)
-- [License](#-license)
-
-</details>
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
 - Claude Code CLI v2.0.27+
 - Active Claude subscription
 
-### Installation (Choose One)
+### Installation
 
-<details open>
-<summary><strong>Option 1: From Marketplace (Recommended)</strong></summary>
-
+**Option 1: From Marketplace (Recommended)**
 ```bash
-# Step 1️⃣ Add the marketplace
 /plugin add marketplace pluginagentmarketplace/custom-plugin-ux-design
-
-# Step 2️⃣ Install the plugin
 /plugin install custom-plugin-ux-design@pluginagentmarketplace-ux-design
-
-# Step 3️⃣ Restart Claude Code
-# Close and reopen your terminal/IDE
 ```
 
-</details>
-
-<details>
-<summary><strong>Option 2: Local Installation</strong></summary>
-
+**Option 2: Local Installation**
 ```bash
-# Clone the repository
 git clone https://github.com/pluginagentmarketplace/custom-plugin-ux-design.git
 cd custom-plugin-ux-design
-
-# Load locally
 /plugin load .
-
-# Restart Claude Code
 ```
 
-</details>
-
-### ✅ Verify Installation
+### Verify Installation
 
 After restart, you should see these agents:
-
 ```
-custom-plugin-ux-design:06-growth-strategist
-custom-plugin-ux-design:01-plugin-architect
-custom-plugin-ux-design:04-devx-engineer
-custom-plugin-ux-design:03-market-researcher
-custom-plugin-ux-design:05-qa-tester
-... and 2 more
+custom-plugin-ux-design:01-ux-research
+custom-plugin-ux-design:02-ui-design
+custom-plugin-ux-design:03-interaction-design
+custom-plugin-ux-design:04-prototyping
+custom-plugin-ux-design:05-accessibility
+custom-plugin-ux-design:06-mobile-ux
+custom-plugin-ux-design:07-ux-writing
 ```
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
-| 🤖 **7 Agents** | Specialized AI agents for ux design tasks |
-| 🛠️ **7 Skills** | Reusable capabilities with Golden Format |
-| ⌨️ **4 Commands** | Quick slash commands |
-| 🔄 **SASMP v1.3.0** | Full protocol compliance |
+| **7 Production-Grade Agents** | Specialized AI agents with clear boundaries, I/O schemas, error handling |
+| **7 Atomic Skills** | Single-responsibility skills with validation, retry logic, test templates |
+| **4 Workflow Commands** | Comprehensive slash commands for plugin development |
+| **SASMP v1.3.0** | Full protocol compliance with EQHM enabled |
+| **Troubleshooting Guides** | Decision trees and debug checklists for every component |
 
 ---
 
-## 🤖 Agents
+## Agents
 
-### 7 Specialized Agents
+### 7 Specialized UX Design Agents
 
-| # | Agent | Purpose |
-|---|-------|---------|
-| 1 | **06-growth-strategist** | Expert in plugin monetization, growth strategies, and busine |
-| 2 | **01-plugin-architect** | Expert in Claude Code plugin architecture, design patterns,  |
-| 3 | **04-devx-engineer** | Expert in developer experience (DevX) for plugins. Specializ |
-| 4 | **03-market-researcher** | Expert in market analysis, competitive research, and user ta |
-| 5 | **05-qa-tester** | Expert in quality assurance and testing for plugins. Special |
-| 6 | **07-community-manager** | Expert in plugin documentation, community engagement, and us |
-| 7 | **02-ux-designer** | Expert in user experience and interface design for Claude Co |
+| # | Agent | Purpose | Bonded Skill |
+|---|-------|---------|--------------|
+| 1 | **01-ux-research** | User interviews, surveys, personas, journey mapping, usability testing | `user-research` |
+| 2 | **02-ui-design** | Visual design, design systems, components, typography, color theory | `ui-design` |
+| 3 | **03-interaction-design** | Interaction patterns, micro-interactions, user flows, affordances | `interaction-design` |
+| 4 | **04-prototyping** | Figma workflows, wireframes, interactive prototypes, user testing | `prototyping` |
+| 5 | **05-accessibility** | WCAG compliance, screen readers, keyboard navigation, inclusive design | `accessibility` |
+| 6 | **06-mobile-ux** | iOS HIG, Material Design, gestures, responsive patterns | `mobile-ux` |
+| 7 | **07-ux-writing** | Microcopy, voice and tone, error messages, CTAs, content strategy | `ux-writing` |
+
+### Agent Features (Production-Grade)
+
+Each agent includes:
+- Clear role & responsibility boundaries
+- Type-safe input/output schemas
+- Error handling with recovery strategies
+- Fallback mechanisms
+- Token/cost optimization configs
+- Troubleshooting decision trees
 
 ---
 
-## 🛠️ Skills
+## Skills
 
-### Available Skills
+### 7 Atomic Skills
 
 | Skill | Description | Invoke |
 |-------|-------------|--------|
-| `documentation` | Master documentation creation, community building, and user  | `Skill("custom-plugin-ux-design:documentation")` |
-| `plugin-testing` | Master testing strategies, quality assurance, and performanc | `Skill("custom-plugin-ux-design:plugin-testing")` |
-| `market-research` | Master market analysis, competitive research, and user targe | `Skill("custom-plugin-ux-design:market-research")` |
-| `ux-ui-design` | Master user experience and interface design principles. Lear | `Skill("custom-plugin-ux-design:ux-ui-design")` |
-| `monetization-strategy` | Master monetization models, pricing strategies, and growth t | `Skill("custom-plugin-ux-design:monetization-strategy")` |
-| `plugin-architecture` | Master Claude Code plugin architecture, design patterns, and | `Skill("custom-plugin-ux-design:plugin-architecture")` |
-| `developer-experience` | Master developer experience design, API design, and document | `Skill("custom-plugin-ux-design:developer-experience")` |
+| `user-research` | Master user research methods and analysis | `Skill("custom-plugin-ux-design:user-research")` |
+| `ui-design` | Master visual design and design systems | `Skill("custom-plugin-ux-design:ui-design")` |
+| `interaction-design` | Master interaction patterns and micro-interactions | `Skill("custom-plugin-ux-design:interaction-design")` |
+| `prototyping` | Master wireframing and prototype testing | `Skill("custom-plugin-ux-design:prototyping")` |
+| `accessibility` | Master WCAG compliance and inclusive design | `Skill("custom-plugin-ux-design:accessibility")` |
+| `mobile-ux` | Master iOS HIG and Material Design | `Skill("custom-plugin-ux-design:mobile-ux")` |
+| `ux-writing` | Master microcopy and content strategy | `Skill("custom-plugin-ux-design:ux-writing")` |
+
+### Skill Features (Production-Grade)
+
+Each skill includes:
+- Atomic, single-responsibility design
+- Comprehensive parameter validation
+- Retry logic with exponential backoff
+- Logging & observability hooks
+- Unit test templates
+- Learning modules
 
 ---
 
-## ⌨️ Commands
+## Commands
 
-| Command | Description |
-|---------|-------------|
-| `/market-plugin` | plugin |
-| `/publish-plugin` | plugin |
-| `/design-ux` | ux |
-| `/create-plugin` | plugin |
-
----
-
-## 📚 Documentation
-
-| Document | Description |
-|----------|-------------|
-| [CHANGELOG.md](CHANGELOG.md) | Version history |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
-| [LICENSE](LICENSE) | License information |
+| Command | Description | Usage |
+|---------|-------------|-------|
+| `/create-plugin` | Create new Claude Code plugin with scaffolding | `/create-plugin my-plugin --scaffold` |
+| `/design-ux` | Design UX with research, wireframes, prototypes | `/design-ux my-plugin --research` |
+| `/market-plugin` | Market research and growth strategy | `/market-plugin my-plugin --strategy` |
+| `/publish-plugin` | Validate and publish to marketplace | `/publish-plugin my-plugin --validate` |
 
 ---
 
-## 📁 Project Structure
+## Architecture
 
-<details>
-<summary>Click to expand</summary>
+### Dependency Graph
+
+```
+                    AGENT-SKILL ARCHITECTURE
+================================================================
+
+  AGENTS (Orchestration)              SKILLS (Atomic Execution)
+  ─────────────────────               ───────────────────────────
+
+  01-ux-research ─────────────────── user-research
+       │
+       ↓ (insights)
+  02-ui-design ───────────────────── ui-design
+       │
+       ↓ (components)
+  03-interaction-design ──────────── interaction-design
+       │
+       ↓ (patterns)
+  04-prototyping ─────────────────── prototyping
+       │
+       ↓ (validation)
+  05-accessibility ───────────────── accessibility
+       │
+       ↓ (compliance)
+  06-mobile-ux ───────────────────── mobile-ux
+       │
+       ↓ (platform specs)
+  07-ux-writing ──────────────────── ux-writing
+
+================================================================
+```
+
+### Integrity Verification
+
+```
+INTEGRITY CHECK: PASSED
+─────────────────────────────────────────
+[OK] Agent → Skill bonds: 7/7 valid
+[OK] Orphan skills: 0
+[OK] Ghost triggers: 0
+[OK] Circular dependencies: 0
+[OK] All file references valid
+─────────────────────────────────────────
+```
+
+---
+
+## Troubleshooting
+
+### Common Issues
+
+#### Agent not responding
+```
+Check:
+├── Is plugin loaded? Run: /plugin list
+├── Is agent name correct? Check: agents/*.md
+├── Are tools available? Verify model permissions
+└── Resolution: Reload plugin
+```
+
+#### Skill invocation fails
+```
+Check:
+├── Is skill name correct? Check: skills/*/SKILL.md
+├── Are parameters valid? Check schema
+├── Is bonded agent available?
+└── Resolution: Check skill frontmatter
+```
+
+#### Command not found
+```
+Check:
+├── Is command registered? Check: commands/*.md
+├── Is path in plugin.json correct?
+└── Resolution: Verify plugin.json commands array
+```
+
+---
+
+## Project Structure
 
 ```
 custom-plugin-ux-design/
-├── 📁 .claude-plugin/
-│   ├── plugin.json
-│   └── marketplace.json
-├── 📁 agents/              # 7 agents
-├── 📁 skills/              # 7 skills (Golden Format)
-├── 📁 commands/            # 4 commands
-├── 📁 hooks/
-├── 📄 README.md
-├── 📄 CHANGELOG.md
-└── 📄 LICENSE
+├── .claude-plugin/
+│   ├── plugin.json          # Plugin manifest
+│   └── marketplace.json     # Marketplace config
+├── agents/                   # 7 production-grade agents
+│   ├── 01-ux-research.md
+│   ├── 02-ui-design.md
+│   ├── 03-interaction-design.md
+│   ├── 04-prototyping.md
+│   ├── 05-accessibility.md
+│   ├── 06-mobile-ux.md
+│   └── 07-ux-writing.md
+├── skills/                   # 7 atomic skills
+│   ├── user-research/SKILL.md
+│   ├── ui-design/SKILL.md
+│   ├── interaction-design/SKILL.md
+│   ├── prototyping/SKILL.md
+│   ├── accessibility/SKILL.md
+│   ├── mobile-ux/SKILL.md
+│   └── ux-writing/SKILL.md
+├── commands/                 # 4 workflow commands
+│   ├── create-plugin.md
+│   ├── design-ux.md
+│   ├── market-plugin.md
+│   └── publish-plugin.md
+├── hooks/
+│   └── hooks.json
+├── README.md
+├── CHANGELOG.md
+└── LICENSE
 ```
-
-</details>
 
 ---
 
-## 📅 Metadata
+## Metadata
 
 | Field | Value |
 |-------|-------|
-| **Version** | 1.0.0 |
-| **Last Updated** | 2025-12-29 |
+| **Version** | 1.1.0 |
+| **Last Updated** | 2025-12-30 |
 | **Status** | Production Ready |
 | **SASMP** | v1.3.0 |
-| **Agents** | 7 |
-| **Skills** | 7 |
+| **Agents** | 7 (Production-Grade) |
+| **Skills** | 7 (Atomic Design) |
 | **Commands** | 4 |
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md).
 
 1. Fork the repository
 2. Create your feature branch
-3. Follow the Golden Format for new skills
+3. Follow production-grade standards for new agents/skills
 4. Submit a pull request
 
 ---
 
-## ⚠️ Security
+## Security
 
 > **Important:** This repository contains third-party code and dependencies.
 >
-> - ✅ Always review code before using in production
-> - ✅ Check dependencies for known vulnerabilities
-> - ✅ Follow security best practices
-> - ✅ Report security issues privately via [Issues](../../issues)
+> - Always review code before using in production
+> - Check dependencies for known vulnerabilities
+> - Follow security best practices
+> - Report security issues privately via [Issues](../../issues)
 
 ---
 
-## 📝 License
+## License
 
-Copyright © 2025 **Dr. Umit Kacar** & **Muhsin Elcicek**
+Copyright 2025 **Dr. Umit Kacar** & **Muhsin Elcicek**
 
 Custom License - See [LICENSE](LICENSE) for details.
 
 ---
 
-## 👥 Contributors
+## Contributors
 
-<table>
-<tr>
-<td align="center">
-<strong>Dr. Umit Kacar</strong><br/>
-Senior AI Researcher & Engineer
-</td>
-<td align="center">
-<strong>Muhsin Elcicek</strong><br/>
-Senior Software Architect
-</td>
-</tr>
-</table>
+| Contributor | Role |
+|-------------|------|
+| **Dr. Umit Kacar** | Senior AI Researcher & Engineer |
+| **Muhsin Elcicek** | Senior Software Architect |
 
 ---
 
 <div align="center">
 
-**Made with ❤️ for the Claude Code Community**
+**Made for the Claude Code Community**
 
 [![GitHub](https://img.shields.io/badge/GitHub-pluginagentmarketplace-black?style=for-the-badge&logo=github)](https://github.com/pluginagentmarketplace)
 

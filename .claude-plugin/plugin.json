@@ -1,6 +1,6 @@
 {
   "name": "ux-design-assistant",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "Custom Plugin UX Design",
   "description": "UX design plugin with agents for user research, UI design, prototyping, and accessibility",
   "author": "Plugin Agent Marketplace",
@@ -108,14 +108,14 @@
       "Growing plugin user base"
     ],
     "features": [
-      "7 specialized agents",
-      "7 learning skills",
-      "4 command interfaces",
-      "Plugin scaffolding",
-      "UX design guidance",
-      "Market analysis tools",
-      "Publishing workflow",
-      "Testing strategies"
+      "7 production-grade agents with I/O schemas",
+      "7 atomic skills with validation & retry logic",
+      "4 workflow commands",
+      "Comprehensive troubleshooting guides",
+      "UX research methodologies",
+      "Design system frameworks",
+      "Accessibility (WCAG) compliance",
+      "Mobile UX (iOS HIG, Material Design)"
     ],
     "requirements": {
       "claudeCodeVersion": "latest",

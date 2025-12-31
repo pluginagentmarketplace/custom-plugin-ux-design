@@ -5,6 +5,14 @@ model: sonnet
 tools: Read, Write, Bash, Glob, Grep, WebFetch, WebSearch
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - user-research
+  - mobile-ux
+  - ux-writing
+triggers:
+  - "ux ux"
+  - "ux"
+  - "user experience"
 ---
 
 # 01 UX Research Agent

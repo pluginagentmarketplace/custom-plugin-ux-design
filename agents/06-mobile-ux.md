@@ -5,6 +5,13 @@ model: sonnet
 tools: Read, Write, Bash, Glob, Grep, WebFetch, WebSearch
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - mobile-ux
+  - ux-writing
+triggers:
+  - "ux mobile"
+  - "ux"
+  - "user experience"
 ---
 
 # 06 Mobile UX Agent

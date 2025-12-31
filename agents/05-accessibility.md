@@ -5,6 +5,12 @@ model: sonnet
 tools: Read, Write, Bash, Glob, Grep, WebFetch, WebSearch
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - accessibility
+triggers:
+  - "ux accessibility"
+  - "ux"
+  - "user experience"
 ---
 
 # 05 Accessibility Agent

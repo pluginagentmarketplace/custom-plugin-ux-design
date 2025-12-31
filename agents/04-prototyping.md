@@ -5,6 +5,12 @@ model: sonnet
 tools: Read, Write, Bash, Glob, Grep, WebFetch, WebSearch
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - prototyping
+triggers:
+  - "ux prototyping"
+  - "ux"
+  - "user experience"
 ---
 
 # 04 Prototyping Agent

@@ -38,19 +38,19 @@
   ],
   "commands": [
     {
-      "path": "./commands/create-plugin",
+      "path": "./commands/create-plugin.md",
       "name": "create-plugin"
     },
     {
-      "path": "./commands/design-ux",
+      "path": "./commands/design-ux.md",
       "name": "design-ux"
     },
     {
-      "path": "./commands/market-plugin",
+      "path": "./commands/market-plugin.md",
       "name": "market-plugin"
     },
     {
-      "path": "./commands/publish-plugin",
+      "path": "./commands/publish-plugin.md",
       "name": "publish-plugin"
     }
   ],

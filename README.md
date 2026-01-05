@@ -55,7 +55,7 @@
 
 **Option 1: From Marketplace (Recommended)**
 ```bash
-/plugin add marketplace pluginagentmarketplace/custom-plugin-ux-design
+/plugin marketplace add pluginagentmarketplace/custom-plugin-ux-design
 /plugin install custom-plugin-ux-design@pluginagentmarketplace-ux-design
 ```
 
